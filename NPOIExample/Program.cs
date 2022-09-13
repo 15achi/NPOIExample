@@ -16,8 +16,6 @@ for (int i = 1; i <= 9; i++)
     });
 }
 
-var memoryStream = new MemoryStream();
-// --- Below code would create excel file with dummy data----  
 
     IWorkbook workbook = new XSSFWorkbook();
     ISheet excelSheet = workbook.CreateSheet("Student");
@@ -44,9 +42,9 @@ var memoryStream = new MemoryStream();
 
         workbook.Write(exportData);
 
-      var conent = exportData.ToArray();
-    //File.WriteAllBytes("C:\\Users\\User\\Desktop\\test\\excel_1.xlsx", StreamHelpers.GetBytes(exportData));
-    File.WriteAllBytes("C:\\Users\\User\\Desktop\\test\\excel_1.xlsx", conent);
+      var conent = exportData.ToArray(); 
+      File.WriteAllBytes("C:\\Users\\User\\Desktop\\test\\excel_1.xlsx", conent);
+    //test
 
 }
 
