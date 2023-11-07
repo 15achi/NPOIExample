@@ -44,7 +44,7 @@ for (int i = 1; i <= 9; i++)
 
       var conent = exportData.ToArray(); 
       File.WriteAllBytes("C:\\Users\\User\\Desktop\\test\\excel_1.xlsx", conent);
-    //test
+    //ტესტ2
 
 }
 
