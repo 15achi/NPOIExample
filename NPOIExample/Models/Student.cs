@@ -12,6 +12,6 @@ namespace NPOIExample.Models
         public string Name { get; set; }
         public string Roll { get; set; }
 
-        public string Address { get; set; }
+        public string Address { get; set;  }
     }
 }
